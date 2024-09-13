@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.3,
+  "group": "iridium_ingot",
+  "ingredient": {
+    "item": "endless:iridium_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "endless:iridium_ingot"
+  }
+}

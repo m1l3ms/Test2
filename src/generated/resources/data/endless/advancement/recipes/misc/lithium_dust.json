@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_lithium_nugget": {
+      "conditions": {
+        "items": [
+          {
+            "items": "endless:lithium_nugget"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "endless:lithium_dust"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_lithium_nugget"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "endless:lithium_dust"
+    ]
+  }
+}

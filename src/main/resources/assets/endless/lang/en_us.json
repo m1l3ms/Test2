@@ -1,8 +1,7 @@
 {
-  "creativetab.endless_tab": "Endless Mod",
   "creativetab.endless_blocks_tab": "Endless Blocks",
-  "creativetab.endless_ingots_tab": "Endless Items",
-  "creativetab.endless_tools_tab": "Endless Tools",
+
+  "creativetab.endless_ingredients_tab": "Endless Ingredients",
 
   "block.endless.aluminum_ore": "Aluminum Ore",
   "block.endless.aluminum_block": "Block of Aluminum",
@@ -123,6 +122,8 @@
   "item.endless.zinc_ingot": "Zinc Ingot",
   "item.endless.raw_zinc": "Raw Zinc",
 
+  "creativetab.endless_tools_and_weapons_tab": "Endless Tools and Weapons",
+
   "item.endless.aluminum_sword": "Aluminum Sword",
   "item.endless.aluminum_pickaxe": "Aluminum Pickaxe",
   "item.endless.aluminum_axe": "Aluminum Axe",
@@ -203,7 +204,7 @@
 
 
 
-  "creativetab.endless_mythical_creatures_tab": "Endless Mythical Creatures Tab",
+  "creativetab.endless_creatures_drop_tab": "Endless Creature Drops Tab",
   "item.endless.adragon_blood": "Acid Dragon Blood",
   "item.endless.fdragon_blood": "Fire Dragon Blood",
   "item.endless.fdragon_bones": "Dragon Bone",

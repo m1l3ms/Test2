@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "endless:iridium_nugget"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "endless:iridium_dust"
+  }
+}

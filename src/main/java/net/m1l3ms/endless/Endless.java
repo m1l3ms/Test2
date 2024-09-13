@@ -3,6 +3,7 @@ package net.m1l3ms.endless;
 import com.mojang.logging.LogUtils;
 import net.m1l3ms.endless.block.MetalBlocks;
 import net.m1l3ms.endless.item.MetalItems;
+import net.m1l3ms.endless.item.MythicalCreaturesDrops;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -40,6 +41,7 @@ public class Endless
         MetalBlocks.register(modEventBus);
         MetalItems.register(modEventBus);
         CreativeModTabs.register(modEventBus);
+        MythicalCreaturesDrops.register(modEventBus);
         NeoForge.EVENT_BUS.register(this);
 
 

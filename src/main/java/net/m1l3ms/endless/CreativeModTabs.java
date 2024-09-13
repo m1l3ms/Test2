@@ -2,9 +2,9 @@ package net.m1l3ms.endless;
 
 import net.m1l3ms.endless.block.MetalBlocks;
 import net.m1l3ms.endless.item.MetalItems;
+import net.m1l3ms.endless.item.MythicalCreaturesDrops;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
@@ -12,16 +12,14 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
 
-
-
 public class CreativeModTabs
 {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TAB =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Endless.MODID);
 
-    public static final Supplier<CreativeModeTab> ENDLESS_ITEMS_TAB = CREATIVE_MODE_TAB.register("endless_ingot_tab",
+    public static final Supplier<CreativeModeTab> ENDLESS_INGREDIENTS_TAB = CREATIVE_MODE_TAB.register("endless_ingredients_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(MetalItems.Aluminum_Ingot.get()))
-                    .title(Component.translatable("creativetab.endless_ingots_tab"))
+                    .title(Component.translatable("creativetab.endless_ingredients_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(MetalItems.Aluminum_Ingot.get());
                         output.accept(MetalItems.Raw_Aluminum.get());
@@ -90,10 +88,57 @@ public class CreativeModTabs
 
                     }).build());
 
+    public static final Supplier<CreativeModeTab> ENDLESS_CREATURES_DROP_TAB = CREATIVE_MODE_TAB.register("endless_creatures_drop_tab",
+            () ->CreativeModeTab.builder().icon(() -> new ItemStack(MythicalCreaturesDrops.Phoenix_Feather.get()))
+                    .title(Component.translatable("creativetab.endless_creatures_drop_tab"))
+                    .displayItems((pParameters, output) ->
+                    {
+                        output.accept(MythicalCreaturesDrops.Phoenix_Feather.get());
+                        //Dragon Skin+Scales
+                        //dragon skins
+                        output.accept(MythicalCreaturesDrops.Black_FDragon_Skin.get());
+                        //Dragons Scales
+                        output.accept(MythicalCreaturesDrops.Black_FDragon_Scales.get());
+                        //dragon skins
+                        output.accept(MythicalCreaturesDrops.Blue_FDragon_Skin.get());
+                        //Dragons Scales
+                        output.accept(MythicalCreaturesDrops.Blue_FDragon_Scales.get());
+                        //dragon skins
+                        output.accept(MythicalCreaturesDrops.Light_Blue_FDragon_Skin.get());
+                        //Dragons Scales
+                        output.accept(MythicalCreaturesDrops.Light_Blue_FDragon_Scales.get());
+                        //dragon skins
+                        output.accept(MythicalCreaturesDrops.Red_FDragon_Skin.get());
+                        //Dragons Scales
+                        output.accept(MythicalCreaturesDrops.Red_FDragon_Scales.get());
+                        //dragon skins
+                        output.accept(MythicalCreaturesDrops.Emerald_FDragon_Skin.get());
+                        //Dragons Scales
+                        output.accept(MythicalCreaturesDrops.Emerald_FDragon_Scales.get());
+                        //dragon skins
+                        output.accept(MythicalCreaturesDrops.Gray_FDragon_Skin.get());
+                        //Dragon Scales
+                        output.accept(MythicalCreaturesDrops.Gray_FDragon_Scales.get());
+                        //dragon skins
+                        output.accept(MythicalCreaturesDrops.Light_Gray_FDragon_Skin.get());
+                        //Dragons Scales
+                        output.accept(MythicalCreaturesDrops.Light_Gray_FDragon_Scales.get());
+                        //dragon skins
+                        output.accept(MythicalCreaturesDrops.Bright_Red_FDragon_Skin.get());
+                        //Dragons Scales
+                        output.accept(MythicalCreaturesDrops.Bright_Red_FDragon_Scales.get());
+                        //dragon skins
+                        output.accept(MythicalCreaturesDrops.Bronze_FDragon_Skin.get());
+                        //Dragons Scales
+                        output.accept(MythicalCreaturesDrops.Bronze_FDragon_Scales.get());
+                        //dragon skins
+                        output.accept(MythicalCreaturesDrops.Sea_Green_FDragon_Skin.get());
+                        //Dragons Scales
+                        output.accept(MythicalCreaturesDrops.Sea_Green_FDragon_Scales.get());
+                    }).build());
 
     public static final Supplier<CreativeModeTab> ENDLESS_BLOCKS_TAB = CREATIVE_MODE_TAB.register("endless_blocks_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(MetalBlocks.Aluminum_Block.get()))
-                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(Endless.MODID, "metal_ingot_tab"))
                     .title(Component.translatable("creativetab.endless_blocks_tab"))
                     .displayItems((pParameters, output) -> {
                         //Aluminum block
@@ -164,12 +209,6 @@ public class CreativeModTabs
 
                     }).build());
 
-    public static final Supplier<CreativeModeTab> ENDLESS_TOOLS_TAB = CREATIVE_MODE_TAB.register("endless_tools_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(MetalBlocks.Aluminum_Block.get()))
-                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(Endless.MODID, "metal_ingot_tab"))
-                    .title(Component.translatable("creativetab.endless_tools_tab"))
-                    .displayItems((pParameters, output) -> {
 
-                    }).build());
     public static void register(IEventBus eventBus) {CREATIVE_MODE_TAB.register(eventBus);}
 }

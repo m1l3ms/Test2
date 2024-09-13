@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.3,
+  "group": "platinum_ingot",
+  "ingredient": {
+    "item": "endless:raw_platinum"
+  },
+  "result": {
+    "count": 1,
+    "id": "endless:platinum_ingot"
+  }
+}
