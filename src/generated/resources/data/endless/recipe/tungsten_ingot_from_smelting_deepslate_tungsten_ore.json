@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.3,
+  "group": "tungsten_ingot",
+  "ingredient": {
+    "item": "endless:deepslate_tungsten_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "endless:tungsten_ingot"
+  }
+}

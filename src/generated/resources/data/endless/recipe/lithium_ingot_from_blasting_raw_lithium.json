@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.3,
+  "group": "lithium_ingot",
+  "ingredient": {
+    "item": "endless:raw_lithium"
+  },
+  "result": {
+    "count": 1,
+    "id": "endless:lithium_ingot"
+  }
+}

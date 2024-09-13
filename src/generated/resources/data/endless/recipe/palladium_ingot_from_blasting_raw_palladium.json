@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.3,
+  "group": "palladium_ingot",
+  "ingredient": {
+    "item": "endless:raw_palladium"
+  },
+  "result": {
+    "count": 1,
+    "id": "endless:palladium_ingot"
+  }
+}
